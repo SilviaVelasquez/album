@@ -1,1 +1,16 @@
-{{ object_list }} 
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block section %}
+ 	<h2>Photo</h2>
+ 	<hr>
+{% endblock section %}
+
+{% block maincontent %}
+ 	<div class="row well">
+ 		<div class="col-md-6 well">
+ 		{{ object_list }}
+ 		</div>
+ 	</div>
+{% endblock maincontent %} 
